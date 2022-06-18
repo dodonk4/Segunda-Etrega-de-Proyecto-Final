@@ -1,1 +1,0 @@
-[{"id":"1","title":"manzana","descripcion":"Es una fruta","codigo":"44440000056585685898","foto":"https://elegifruta.com.ar/onepage/wp-content/uploads/2017/07/manzana_roja.jpg","precio":"$900","stock":"5","timestap":1654479021995}]
