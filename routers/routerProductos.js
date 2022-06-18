@@ -16,7 +16,7 @@ routerApiProductos.get('/api/productos/', controladorProductos.getAll);
 routerApiProductos.get('/api/productos/:id', controladorProductos.getById);
 routerApiProductos.post('/api/productos/', controladorProductos.create);
 routerApiProductos.delete('/api/productos/:id', controladorProductos.borrar);
-routerApiProductos.delete('/api/productos/:id', controladorProductos.reemplazar);
+routerApiProductos.put('/api/productos/:id', controladorProductos.reemplazar);
 
 // module.exports = routerApiProductos;
 export default routerApiProductos;

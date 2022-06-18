@@ -9,14 +9,14 @@ import { engine } from 'express-handlebars';
 
 // const routerProductos = require('./routers/routerProductos.js') ;
 // const routerCarrito = require('./routers/routerCarrito.js');
-import routerProductos from './routers/routerProductos.js';
+import routerApiProductos from './routers/routerProductos.js';
 import routerCarrito from './routers/routerCarrito.js';
 
 
 const app = express();
 
 app.use(express.urlencoded({ extended: true }))
-app.use(routerProductos);
+app.use(routerApiProductos);
 app.use(routerCarrito);
 
 
