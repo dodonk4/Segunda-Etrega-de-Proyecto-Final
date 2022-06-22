@@ -4,11 +4,11 @@ export default {
         path: './DB'
     },
     mongodb: {
-        cnxStr: 'srv+mongodb://xxxxxxxxxxxxxxxxxxx',
+        cnxStr: 'mongodb+srv://root:1234@cluster0.5xw3itz.mongodb.net/?retryWrites=true&w=majority',
         options: {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            useCreateIndex: true,
+            // useCreateIndex: true,
             serverSelectionTimeoutMS: 5000,
         }
     },

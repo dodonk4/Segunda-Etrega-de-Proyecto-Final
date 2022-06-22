@@ -9,10 +9,12 @@ switch (config.MODO_PERSISTENCIA) {
         carritosDao = new CarritosDaoFirebase()
         productosDao = new ProductosDaoFirebase()
         break
-    // case 'mongodb':
-    //     const { default: ProductosDaoMongoDb } = await import('./ProductosDaoMongoDb.js')
-    //     productosDao = new ProductosDaoMongoDb()
-    //     break
+    case 'mongodb':
+        const { default: ProductosDaoMongoDb } = await import('./productosDaoMongoDb.js')
+        const { default: CarritosDaoMongoDb } = await import('./carritosDaoMongoDb.js')
+        carritosDao = new CarritosDaoMongoDb()
+        productosDao = new ProductosDaoMongoDb()
+        break
     
 }
 
